@@ -4,7 +4,7 @@ Pipeline{
 		 stage('compile'){
 			steps{
 			def readJson =readJSON(file:'response.json').trim()
-			echo "deleteBucketStatus is ${deleteBucketStatus}" 
+			echo "smoke is ${smoke}" 
 			echo "Compiled SuccessFully...!"
 			}
 		}
